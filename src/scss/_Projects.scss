@@ -1,0 +1,70 @@
+.projects {
+  @include structure;
+
+  &-title {
+    @include title;
+    margin-bottom: 0 !important;
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #000;
+}
+.laptop:hover .overlay {
+  opacity: 0.8;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.actions {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.carousel-root {
+  height: 700px;
+}
+
+@media (max-width: 768px) {
+  .projects {
+    margin: 0 auto;
+    &-card__mobile {
+      border: none;
+      color: $primary-color;
+    }
+    ul {
+      display: default;
+      flex-wrap: nowrap;
+    }
+
+    &-project__desc {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  .carousel-root {
+    height: 292.5px;
+  }
+}

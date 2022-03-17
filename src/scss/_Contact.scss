@@ -1,0 +1,38 @@
+.contact {
+  @include structure;
+  padding-top: 0 !important;
+
+  &-title {
+    @include title;
+  }
+
+  &-input {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  &-label {
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+  }
+
+  &-form {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  &-btn {
+    width: 100%;
+  }
+
+  &-message {
+    font-size: 20px;
+    margin-top: 20px !important;
+  }
+
+  &-error {
+    color: #dc3545;
+  }
+  &-success {
+    color: #28a745;
+  }
+}

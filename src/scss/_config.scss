@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Adam";
+  src: url("../fonts/ADAM.CG\ PRO.otf");
+}
+
+$primary-color: #1d1635;
+$secondary-color: #dedce2;
+
+* {
+  box-sizing: border-box;
+  // margin: 0;
+  padding: 0;
+}
+
+@mixin structure {
+  height: 100%;
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+  @media (max-width: 768px) {
+    padding-bottom: 7.5rem;
+  }
+}
+
+@mixin title {
+  margin: 40px auto;
+  padding-top: 20px;
+  font-size: 5rem !important;
+  letter-spacing: 1rem;
+  text-shadow: 0 0 8px rgb(97, 54, 212), 0 0 0.2em transparent;
+  font-family: "Adam" !important;
+  @media (max-width: 768px) {
+    font-size: 2rem !important;
+  }
+}
+
+@mixin smallTitle {
+  font-size: 24px;
+  margin: 0 auto;
+  letter-spacing: 0.5rem;
+  text-shadow: 0 0 8px rgb(97, 54, 212), 0 0 0.2em transparent;
+}
+
+@function backgroundOpacity($background, $url) {
+  @return linear-gradient(to bottom, rgba(0, 0, 0, 0.6), $background),
+    url($url) center top;
+}

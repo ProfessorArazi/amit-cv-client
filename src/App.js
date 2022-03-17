@@ -1,24 +1,110 @@
-import logo from './logo.svg';
-import './App.css';
+import { Navbar, Nav, Container } from "react-bootstrap";
+import { useState, useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./scss/App.scss";
+import Home from "./Componenets/Home/Home";
+import About from "./Componenets/About/About";
+import Skills from "./Componenets/Skills/Skills";
+import Contact from "./Componenets/Contact/Contact";
+import Footer from "./Componenets/Footer/Footer";
+import Projects from "./Componenets/Projects/Projects";
+
+/*
+todo:
+1.add env with server
+2.add animation in about page
+3.add text about me
+4.remove familiar with
+5.add projects and style projects componenet
+
+*/
 
 function App() {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
+
+  const [expanded, setExpanded] = useState(false);
+
+  const closeToggleHandler = () => {
+    setExpanded(false);
+  };
+
+  const toggleHandler = () => {
+    setExpanded(expanded ? false : "expanded");
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <>
+      <Navbar expanded={expanded} expand="lg" fixed="top" variant="dark">
+        <Container>
+          <Navbar.Brand href="#home" onClick={closeToggleHandler}>
+            React-Bootstrap
+          </Navbar.Brand>
+          <Navbar.Toggle
+            aria-controls="basic-navbar-nav"
+            onClick={toggleHandler}
+          />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link href="#home" onClick={closeToggleHandler}>
+                Home
+              </Nav.Link>
+              <Nav.Link href="#about" onClick={closeToggleHandler}>
+                About
+              </Nav.Link>
+              <Nav.Link href="#skills" onClick={closeToggleHandler}>
+                Skills
+              </Nav.Link>
+              <Nav.Link href="#projects" onClick={closeToggleHandler}>
+                Projects
+              </Nav.Link>
+              <Nav.Link href="#contact" onClick={closeToggleHandler}>
+                Contact
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+      <main>
+        <section onClick={closeToggleHandler} id="home" className="home">
+          <Home />
+        </section>
+        <section onClick={closeToggleHandler} id="about" className="about">
+          <About />
+        </section>
+        <section
+          data-aos="fade-up"
+          data-aos-once
+          onClick={closeToggleHandler}
+          id="skills"
+          className="skills"
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <Skills />
+        </section>
+        <section
+          data-aos="fade-up"
+          data-aos-once
+          onClick={closeToggleHandler}
+          id="projects"
+          className="projects"
+        >
+          <Projects />
+        </section>
+        <section
+          data-aos="fade-up"
+          data-aos-once
+          onClick={closeToggleHandler}
+          id="contact"
+          className="contact"
+        >
+          <Contact />
+        </section>
+        <Footer />
+      </main>
+    </>
   );
 }
 

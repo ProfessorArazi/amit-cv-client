@@ -1,0 +1,72 @@
+.skills {
+  @include structure;
+  // background: url("../img/background.jpg");
+  color: $secondary-color;
+  padding-bottom: 0 !important;
+  &-title {
+    @include title;
+    margin: 45px auto 35px;
+  }
+
+  &-title__front,
+  &-title__back,
+  &-title__familiar {
+    @include smallTitle;
+
+    &::after {
+      content: "";
+      display: block;
+      margin: 0 auto;
+      padding-top: 10px;
+      border-bottom: 1px solid $secondary-color;
+    }
+  }
+
+  &-title__front::after {
+    width: 62%;
+  }
+  &-title__back::after {
+    width: 38%;
+  }
+  &-title__familiar::after {
+    width: 22%;
+  }
+
+  .front,
+  .back {
+    list-style: none;
+    margin: 20px auto 50px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5.5rem;
+    font-size: 1.5rem;
+    padding: 0 !important;
+  }
+}
+
+.back {
+  gap: 8rem !important;
+}
+
+@media (max-width: 768px) {
+  .front {
+    gap: 2rem !important;
+  }
+
+  .back {
+    gap: 76px !important;
+  }
+
+  .skills {
+    &-title__front::after {
+      width: 83%;
+    }
+    &-title__back::after {
+      width: 63%;
+    }
+    &-title__familiar::after {
+      width: 40%;
+    }
+  }
+}

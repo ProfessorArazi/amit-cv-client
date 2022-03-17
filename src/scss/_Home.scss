@@ -1,0 +1,29 @@
+.home {
+  @include structure;
+  padding-top: 40vh;
+  background: backgroundOpacity(#2c0057, "../img/project-2.jpg");
+  background-size: cover;
+
+  &__pre {
+    letter-spacing: 0.5rem;
+  }
+
+  &__name {
+    font-size: 5rem;
+    letter-spacing: 22px;
+    padding-bottom: 1rem;
+    margin: 2rem 0;
+    border-bottom: 2px solid $secondary-color;
+  }
+
+  &__desc {
+    margin: 0 auto;
+    letter-spacing: 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .home__name {
+    font-size: 4rem;
+  }
+}

@@ -1,0 +1,226 @@
+nav {
+  font-size: 16px;
+  background: #563d7c;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+.home {
+  height: 100%;
+  padding-bottom: 30vh;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-top: 40vh;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/project-2.jpg") center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/project-2.jpg") center top;
+  background-size: cover;
+}
+
+.home__name {
+  font-size: 5rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #fff;
+}
+
+.home h2 {
+  margin: 0;
+}
+
+.about {
+  height: 100%;
+  padding-bottom: 30vh;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  text-align: left;
+  color: #272727;
+  padding-top: 5vh;
+  padding-bottom: 0;
+  background: #dfd9d9;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 3em;
+}
+
+.about-me {
+  margin: 30px 150px;
+  gap: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-me img {
+  display: inline;
+  width: 500px;
+}
+
+.about-me p {
+  margin: 10px;
+  line-height: 1.5;
+}
+
+.actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1rem;
+  margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+  .about {
+    background: #fff;
+    text-align: center;
+  }
+  .about-title {
+    margin-top: 30px;
+  }
+  .about-me {
+    display: block;
+    gap: 0;
+    margin: 0;
+  }
+  .about-me img {
+    width: auto;
+    display: block;
+    margin: 20px auto;
+  }
+}
+
+.skills {
+  height: 100%;
+  padding-bottom: 30vh;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 800px;
+  padding-top: 0;
+  background: #fff;
+  color: #272727;
+}
+
+.skills .my-skills {
+  margin: 0 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.skills .my-skills .skill-card {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.skills .my-skills .hosting {
+  left: 340px;
+  bottom: 345px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.skills .my-skills .database {
+  bottom: 320px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.skills h1 {
+  margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+  .skills {
+    height: 100%;
+    background: #dddada;
+  }
+  .skills .my-skills {
+    margin: 0;
+    display: block;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .skills .my-skills .hosting {
+    left: 0;
+    bottom: 0;
+  }
+  .skills .my-skills .database {
+    left: 0;
+    bottom: 0;
+  }
+  .skills h1 {
+    margin: 20px auto;
+  }
+}
+
+.skills-card {
+  width: 25%;
+  text-align: left;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.skills-card__title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  width: 80%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+
+@media (max-width: 768px) {
+  .skills-card {
+    width: 70%;
+    margin: 30px auto;
+  }
+}
+
+.card-item {
+  padding: 20px 0 10px 10px;
+}
+
+.card-item img {
+  width: 60px;
+  height: 60px;
+}
+
+body {
+  height: 100vh !important;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+  color: #fff !important;
+  line-height: 1 !important;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+/*# sourceMappingURL=App.css.map */

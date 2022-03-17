@@ -1,0 +1,26 @@
+@import "./Header";
+@import "./config";
+@import "./Home";
+@import "./About";
+@import "./Skills";
+@import "./Card";
+@import "./CardItem";
+@import "./Projects";
+@import "./Contact";
+@import "./Footer";
+
+body {
+  height: 100vh !important;
+  font-family: "Dosis", sans-serif !important;
+  color: $secondary-color !important;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.5em;
+}
