@@ -2,6 +2,7 @@ import "../../scss/App.scss";
 import { useRef, useState } from "react";
 import axios from "axios";
 import { Form, Button } from "react-bootstrap";
+import validator from "validator";
 
 const Contact = () => {
   const [Message, setMessage] = useState(null);
@@ -13,13 +14,33 @@ const Contact = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
+
+    const formErrors = {};
+
     const data = {
       name: nameRef.current.value,
       email: emailRef.current.value,
       message: messageRef.current.value,
     };
+
+    if (data.name.trim().length < 2) {
+      formErrors.name = true;
+    }
+
+    if (!validator.isEmail(data.email)) {
+      formErrors.email = true;
+    }
+
+    if (data.message.trim().length === 0) {
+      formErrors.message = true;
+    }
+
+    if (Object.keys(formErrors).length > 0) {
+      return setErrors(formErrors);
+    }
+
     axios
-      .post("../../../../contact", data)
+      .post(`${process.env.REACT_APP_SERVER}/contact`, data)
       .then((res) => {
         setErrors(null);
         setMessage(res.data.message);

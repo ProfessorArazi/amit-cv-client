@@ -13,11 +13,12 @@ import Projects from "./Componenets/Projects/Projects";
 
 /*
 todo:
-1.add env with server
+1.add env with server - finished
 2.add animation in about page
 3.add text about me
-4.remove familiar with
+4.remove familiar with - finished
 5.add projects and style projects componenet
+6.deploy
 
 */
 
