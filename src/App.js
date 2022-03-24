@@ -18,7 +18,8 @@ todo:
 3.add text about me
 4.remove familiar with - finished
 5.add projects and style projects componenet
-6.deploy
+6.deploy - finished
+7.footer
 
 */
 

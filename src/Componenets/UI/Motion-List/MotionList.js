@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { ProjectItem } from "../../Projects/ProjectItem";
 
 export const MotionList = (props) => {
   const container = {
@@ -28,7 +27,7 @@ export const MotionList = (props) => {
   const { ref, inView } = useInView();
   const [count, setCount] = useState(0);
 
-  const items = props.front || props.back || props.familiar;
+  const items = props.front || props.back;
 
   useEffect(() => {
     if (inView && count === 0) {
@@ -45,23 +44,11 @@ export const MotionList = (props) => {
       initial="hidden"
       animate={controls}
     >
-      {props.projects
-        ? props.projects.map((project, i) => (
-            <motion.li key={i} variants={item}>
-              {
-                <ProjectItem
-                  img={project.img}
-                  title={project.title}
-                  text={project.text}
-                />
-              }
-            </motion.li>
-          ))
-        : items.map((skill, i) => (
-            <motion.li className="skill" key={i} variants={item}>
-              {skill}
-            </motion.li>
-          ))}
+      {items.map((skill, i) => (
+        <motion.li className="skill" key={i} variants={item}>
+          {skill}
+        </motion.li>
+      ))}
     </motion.ul>
   );
 };

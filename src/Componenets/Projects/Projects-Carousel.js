@@ -1,4 +1,4 @@
-import "../../../scss/App.scss";
+import "../../scss/App.scss";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useState } from "react";
@@ -10,6 +10,7 @@ export const ProjectsCarousel = (props) => {
   return (
     <div>
       <Carousel
+        className="carousel"
         onChange={(i) => setSlide(props.projects[i])}
         showStatus={false}
         showIndicators={false}

@@ -1,7 +1,7 @@
 import "../../scss/App.scss";
 import amit from "../../img/leamit.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { ProjectsCarousel } from "../UI/Projects-Carousel/Projects-Carousel";
+import { ProjectsCarousel } from "./Projects-Carousel";
 
 const Projects = () => {
   const projects = [

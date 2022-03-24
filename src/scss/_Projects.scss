@@ -43,8 +43,25 @@
   justify-content: center;
 }
 
-.carousel-root {
-  height: 700px;
+.control-arrow {
+  height: 70%;
+}
+
+.control-arrow:hover {
+  background: none !important;
+}
+
+.control-arrow :hover {
+  background: transparent !important;
+}
+
+@media (min-width: 769px) {
+  .carousel {
+    width: 500px !important;
+    height: 300px;
+    // object-fit: cover;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -63,8 +80,5 @@
       width: 90%;
       margin: 0 auto;
     }
-  }
-  .carousel-root {
-    height: 292.5px;
   }
 }
