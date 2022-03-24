@@ -2,7 +2,6 @@
   "name": "amit-cv",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:8080",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@material-ui/core": "^5.0.0-beta.5",
