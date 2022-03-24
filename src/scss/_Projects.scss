@@ -44,7 +44,19 @@
 }
 
 .control-arrow {
-  height: 70%;
+  height: 90%;
+}
+.control-arrow:before {
+  border-top: 16px solid transparent !important;
+  border-bottom: 16px solid transparent !important;
+}
+
+.control-prev.control-arrow:before {
+  border-right: 16px solid #fff !important ;
+}
+
+.control-next.control-arrow:before {
+  border-left: 16px solid #fff !important ;
 }
 
 .control-arrow:hover {
@@ -59,7 +71,6 @@
   .carousel {
     width: 500px !important;
     height: 300px;
-    // object-fit: cover;
     margin: 0 auto;
   }
 }
