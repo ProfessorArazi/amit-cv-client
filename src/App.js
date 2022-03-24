@@ -25,6 +25,7 @@ todo:
 
 function App() {
   useEffect(() => {
+    document.title = "Amit Arazi";
     Aos.init({ duration: 1500 });
   }, []);
 
