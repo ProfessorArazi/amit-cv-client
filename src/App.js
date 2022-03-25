@@ -44,7 +44,7 @@ function App() {
       <Navbar expanded={expanded} expand="lg" fixed="top" variant="dark">
         <Container>
           <Navbar.Brand href="#home" onClick={closeToggleHandler}>
-            React-Bootstrap
+            Amit Arazi
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"

@@ -6,11 +6,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url("./img/background3.jpg");
-  background-size: cover;
   background-attachment: fixed;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@media (max-width: 800px) {
+  body {
+    background-attachment: scroll;
+    background-size: 500rem;
+  }
 }
