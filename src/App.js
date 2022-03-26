@@ -10,6 +10,7 @@ import Skills from "./Componenets/Skills/Skills";
 import Contact from "./Componenets/Contact/Contact";
 import Footer from "./Componenets/Footer/Footer";
 import Projects from "./Componenets/Projects/Projects";
+import axios from "axios";
 
 /*
 todo:
@@ -26,6 +27,7 @@ todo:
 function App() {
   useEffect(() => {
     document.title = "Amit Arazi";
+    axios(process.env.REACT_APP_SERVER);
     Aos.init({ duration: 1500 });
   }, []);
 
