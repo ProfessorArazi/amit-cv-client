@@ -1,12 +1,20 @@
 import "../../scss/App.scss";
-// import { Card, Button } from "react-bootstrap";
-import me from "../../img/amit.png";
+import "@lottiefiles/lottie-player";
+
 const About = () => {
   return (
     <>
       <h1 className="about-title">ABOUT ME</h1>
       <div className="about-me">
-        <img src={me} alt="me" />
+        {/* <img src={me} /> */}
+        <lottie-player
+          background="transparent"
+          autoplay
+          loop
+          mode="normal"
+          src="https://assets8.lottiefiles.com/packages/lf20_yd8fbnml.json"
+          style={{ width: "400px", height: "314px" }}
+        ></lottie-player>
         <div>
           <div className="my-card">
             <h2 className="about-title__sec">Hi there! I am Amit Arazi</h2>

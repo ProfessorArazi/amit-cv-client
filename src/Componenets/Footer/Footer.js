@@ -25,17 +25,12 @@ const Footer = () => {
             <h4>Amit Arazi</h4>
           </div>
           <div className={"social"}>
-            <a href="https://www.instagram.com/cristiano/">
-              <i className="icon ion-social-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/leomessi">
-              <i className="icon ion-social-facebook"></i>
-            </a>
             <a href="https://api.whatsapp.com/send?phone=+972543438551">
               <i className="icon ion-social-whatsapp"></i>
             </a>
           </div>
           <ul className="list-inline">
+            {/* github and linkedin */}
             {/* <li className="list-inline-item">
               <Link to="/contact">דברו איתנו</Link>
             </li>
