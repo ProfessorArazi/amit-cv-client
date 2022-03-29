@@ -10,7 +10,6 @@ import Skills from "./Componenets/Skills/Skills";
 import Contact from "./Componenets/Contact/Contact";
 import Footer from "./Componenets/Footer/Footer";
 import Projects from "./Componenets/Projects/Projects";
-import axios from "axios";
 
 /*
 todo:
