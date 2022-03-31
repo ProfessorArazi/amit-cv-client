@@ -13,7 +13,7 @@ const About = () => {
           loop
           mode="normal"
           src="https://assets8.lottiefiles.com/packages/lf20_yd8fbnml.json"
-          style={{ width: "400px", height: "314px" }}
+          style={{ width: "300px", margin: "0 auto" }}
         ></lottie-player>
         <div>
           <div className="my-card">
