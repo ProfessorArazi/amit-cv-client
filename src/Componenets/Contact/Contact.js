@@ -1,7 +1,7 @@
 import "../../scss/App.scss";
 import { useRef, useState } from "react";
 import axios from "axios";
-import { Form, Button } from "react-bootstrap";
+import { Form } from "react-bootstrap";
 import validator from "validator";
 
 const Contact = () => {
@@ -94,9 +94,9 @@ const Contact = () => {
         {input("Name", nameRef, "text")}
         {input("Email address", emailRef, "email")}
         {input("Message", messageRef, "textarea", 3)}
-        <Button className="contact-btn" variant="primary" type="submit">
+        <button className="dark-btn contact-btn" type="submit">
           Submit
-        </Button>
+        </button>
         {Message && (
           <Form.Text
             className={`contact-message ${

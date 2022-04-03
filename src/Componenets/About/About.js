@@ -2,21 +2,26 @@ import "../../scss/App.scss";
 import "@lottiefiles/lottie-player";
 
 const About = () => {
+  const me = (width, margin) => {
+    return (
+      <lottie-player
+        background="transparent"
+        autoplay
+        loop
+        mode="normal"
+        src="https://assets8.lottiefiles.com/packages/lf20_yd8fbnml.json"
+        style={{ width, margin }}
+      ></lottie-player>
+    );
+  };
+
   return (
     <>
       <h1 className="about-title">ABOUT ME</h1>
       <div className="about-me">
-        {/* <img src={me} /> */}
-        <lottie-player
-          background="transparent"
-          autoplay
-          loop
-          mode="normal"
-          src="https://assets8.lottiefiles.com/packages/lf20_yd8fbnml.json"
-          style={{ width: "300px", margin: "0 auto" }}
-        ></lottie-player>
         <div>
           <div className="my-card">
+            {window.innerWidth <= 768 && me("250px", "5% auto")}
             <h2 className="about-title__sec">Hi there! I am Amit Arazi</h2>
             <p>
               I am a Fullstack developer. <br /> I am passionate about my work
@@ -37,6 +42,7 @@ const About = () => {
           </div> */}
           </div>
         </div>
+        {window.innerWidth > 768 && me("350px", "3.5% auto")}
       </div>
     </>
   );

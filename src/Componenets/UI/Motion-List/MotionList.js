@@ -10,7 +10,7 @@ export const MotionList = (props) => {
       scale: 1,
       transition: {
         delayChildren: props.back ? 1.5 : 0.4,
-        staggerChildren: props.projects ? 0.4 : 0.2,
+        staggerChildren: props.projects ? 0.3 : 0.2,
       },
     },
   };

@@ -5,7 +5,7 @@ nav {
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
 }
 
@@ -14,12 +14,24 @@ nav {
   padding-bottom: 30vh;
   overflow: hidden;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
   padding-top: 40vh;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/project-2.jpg") center top;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/project-2.jpg") center top;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(39, 39, 39, 0.9)),
+      to(rgba(39, 39, 39, 0.3))
+    ),
+    url("../img/project-2.jpg") center top;
+  background: linear-gradient(
+      to right,
+      rgba(39, 39, 39, 0.9),
+      rgba(39, 39, 39, 0.3)
+    ),
+    url("../img/project-2.jpg") center top;
   background-size: cover;
 }
 
@@ -39,8 +51,8 @@ nav {
   padding-bottom: 30vh;
   overflow: hidden;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
   text-align: left;
   color: #272727;
@@ -77,7 +89,7 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 1rem;
   margin: 20px auto;
 }
@@ -107,8 +119,8 @@ nav {
   padding-bottom: 30vh;
   overflow: hidden;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
   height: 800px;
   padding-top: 0;
@@ -122,28 +134,28 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .skills .my-skills .skill-card {
   -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
 }
 
 .skills .my-skills .hosting {
   left: 340px;
   bottom: 345px;
   -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
 }
 
 .skills .my-skills .database {
   bottom: 320px;
   -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
 }
 
 .skills h1 {
@@ -159,7 +171,7 @@ nav {
     margin: 0;
     display: block;
     -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
   .skills .my-skills .hosting {
     left: 0;

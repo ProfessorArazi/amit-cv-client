@@ -1,11 +1,9 @@
 .skills {
   @include structure;
-  // background: url("../img/background.jpg");
   color: $secondary-color;
-  padding-bottom: 0 !important;
   &-title {
     @include title;
-    margin: 45px auto 35px;
+    margin-bottom: 4rem;
   }
 
   &-title__front,

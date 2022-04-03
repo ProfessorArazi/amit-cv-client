@@ -14,8 +14,7 @@ $secondary-color: #dedce2;
 
 @mixin structure {
   height: 100%;
-  padding-top: 6rem;
-  padding-bottom: 5rem;
+  padding: 3rem 0.5rem 5rem;
   overflow: hidden;
   align-items: center;
   text-align: center;
@@ -25,8 +24,7 @@ $secondary-color: #dedce2;
 }
 
 @mixin title {
-  margin: 40px auto;
-  padding-top: 20px;
+  margin: 0 auto 30px;
   font-size: 5rem !important;
   letter-spacing: 1rem;
   text-shadow: 0 0 8px rgb(97, 54, 212), 0 0 0.2em transparent;

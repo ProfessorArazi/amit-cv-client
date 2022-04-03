@@ -43,7 +43,11 @@ function App() {
     <>
       <Navbar expanded={expanded} expand="lg" fixed="top" variant="dark">
         <Container>
-          <Navbar.Brand href="#home" onClick={closeToggleHandler}>
+          <Navbar.Brand
+            className="nav-brand"
+            href="#home"
+            onClick={closeToggleHandler}
+          >
             Amit Arazi
           </Navbar.Brand>
           <Navbar.Toggle
@@ -75,18 +79,21 @@ function App() {
         <section onClick={closeToggleHandler} id="home" className="home">
           <Home />
         </section>
+
         <section onClick={closeToggleHandler} id="about" className="about">
           <About />
         </section>
+        <div id="skills"></div>
         <section
           data-aos="fade-up"
           data-aos-once
           onClick={closeToggleHandler}
-          id="skills"
           className="skills"
         >
           <Skills />
         </section>
+        <div id="projects"></div>
+
         <section
           data-aos="fade-up"
           data-aos-once
@@ -96,6 +103,8 @@ function App() {
         >
           <Projects />
         </section>
+        <div id="contact"></div>
+
         <section
           data-aos="fade-up"
           data-aos-once

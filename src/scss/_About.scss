@@ -7,23 +7,24 @@
     center bottom;
   &-title {
     @include title;
-    margin-left: 350px;
+    text-align: center;
   }
   &-title__sec {
     font-size: 3rem;
     margin-bottom: 3rem;
     letter-spacing: 0.25rem;
+    margin-left: 10%;
   }
   &-me {
     font-size: 18px;
     margin: 20px 50px;
-    gap: 3rem;
     display: flex;
+    justify-content: center;
     img {
       width: 400px;
     }
     p {
-      margin: 10px 40px;
+      margin-left: 10%;
       line-height: 1.5;
       width: 76%;
     }
@@ -47,7 +48,6 @@
     }
 
     &-title__sec {
-      margin: 80px 0 50px 30px;
       font-size: 2rem;
     }
 
@@ -55,14 +55,9 @@
       display: block;
       gap: 0;
       margin: 0;
-      img {
-        width: 350px;
-        display: block;
-        margin: 20px auto;
-      }
+
       p {
-        margin: 0 20px;
-        width: 90%;
+        padding: 5px;
       }
     }
   }
