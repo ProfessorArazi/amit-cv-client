@@ -13,12 +13,13 @@
 
 .carousel {
   position: absolute !important;
-  top: 5.1%;
-  left: 21.3%;
+  top: 9.2%;
 }
 
 .carousel-background {
   position: relative;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
 }
@@ -31,6 +32,8 @@
 
 .carousel-background__img {
   position: relative;
+  top: 0;
+  left: 0;
   height: 373px;
   width: 500px;
 }
@@ -98,8 +101,6 @@
 @media (min-width: 769px) {
   .carousel {
     width: 500px !important;
-    height: 300px;
-    margin: 0 auto;
   }
 }
 
@@ -119,13 +120,5 @@
       width: 90%;
       margin: 0 auto;
     }
-  }
-
-  .carousel {
-    left: 0;
-    top: 9.2%;
-  }
-  .carousel-slide {
-    width: 82% !important;
   }
 }
