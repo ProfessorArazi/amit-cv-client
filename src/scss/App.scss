@@ -26,20 +26,21 @@ h2 {
 }
 
 .dark-btn {
-  background-color: #000;
+  background-color: $primary-color;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-  border: #000;
+  border: $primary-color;
   border-radius: 4px;
-  color: #fff;
+  color: $secondary-color;
   padding: 10px;
   width: 7%;
   font-weight: bolder;
 }
 
 .dark-btn:hover {
-  background-color: #fff;
+  background-color: $secondary-color;
+  border: $secondary-color;
   box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.2);
-  color: #000;
+  color: $primary-color;
 }
 
 .nav-brand {

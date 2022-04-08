@@ -14,6 +14,7 @@ const Contact = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
+    setErrors(null);
 
     const formErrors = {};
 

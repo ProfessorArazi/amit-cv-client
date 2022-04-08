@@ -5,6 +5,32 @@
     @include title;
     margin-bottom: 0 !important;
   }
+  &-project__desc {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+.carousel {
+  position: absolute !important;
+  top: 5.1%;
+  left: 21.3%;
+}
+
+.carousel-background {
+  position: relative;
+}
+
+.carousel-slide {
+  width: 288px !important;
+  height: 185px !important;
+  border-radius: 6px;
+}
+
+.carousel-background__img {
+  position: relative;
+  height: 373px;
+  width: 500px;
 }
 
 .overlay {
@@ -91,5 +117,15 @@
       width: 90%;
       margin: 0 auto;
     }
+  }
+  .carousel-background__img {
+    width: 100%;
+  }
+  .carousel {
+    left: 0;
+    top: 9%;
+  }
+  .carousel-slide {
+    width: 57% !important;
   }
 }
