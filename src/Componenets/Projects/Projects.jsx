@@ -1,12 +1,13 @@
 import "../../scss/App.scss";
 import amit from "../../img/ameat-screen.png";
+import substitutes from "../../img/substitutes.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { ProjectsCarousel } from "./Projects-Carousel";
 
 const Projects = () => {
   const projects = [
     {
-      img: amit,
+      img: substitutes,
       title: "Substitutes",
       text: `Some quick example text to build on the card title and make up
     the bulk of the card's content.`,
@@ -29,7 +30,7 @@ const Projects = () => {
       link: "https://super-compare.vercel.app",
     },
     {
-      img: amit,
+      img: substitutes,
       title: "Ameat",
       text: `Some quick example text to build on the card title and make up
     the bulk of the card's content.`,
@@ -49,7 +50,7 @@ const Projects = () => {
     },
 
     {
-      img: amit,
+      img: substitutes,
       title: "Filter-CV",
       text: (
         <p>
