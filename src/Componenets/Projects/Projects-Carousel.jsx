@@ -17,7 +17,7 @@ export const ProjectsCarousel = (props) => {
           showStatus={false}
           showIndicators={false}
           showThumbs={false}
-          transitionTime={0}
+          transitionTime={200}
         >
           {props.projects.map((project, i) => (
             <img
