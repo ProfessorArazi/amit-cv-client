@@ -13,7 +13,7 @@
 
 .carousel {
   position: absolute !important;
-  top: 9.2%;
+  top: 13%;
 }
 
 .carousel-background {
@@ -22,19 +22,19 @@
   left: 0;
   display: flex;
   justify-content: center;
+  height: 300px;
 }
 
 .carousel-slide {
-  width: 282px !important;
-  height: 185px !important;
-  border-radius: 6px;
+  width: 55% !important;
+  height: 160px !important;
 }
 
 .carousel-background__img {
   position: relative;
   top: 0;
   left: 0;
-  height: 373px;
+  height: 350px;
   width: 500px;
 }
 
@@ -120,5 +120,8 @@
       width: 90%;
       margin: 0 auto;
     }
+  }
+  .carousel-slide {
+    width: 75% !important;
   }
 }

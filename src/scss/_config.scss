@@ -24,7 +24,7 @@ $secondary-color: #dedce2;
 }
 
 @mixin title {
-  margin: 0 auto 30px;
+  margin: 30px auto;
   font-size: 5rem !important;
   letter-spacing: 1rem;
   text-shadow: 0 0 8px rgb(97, 54, 212), 0 0 0.2em transparent;
