@@ -31,7 +31,7 @@ export const ProjectsCarousel = (props) => {
       </div>
       <div>
         <h2>{slide.title}</h2>
-        <p className="projects-project__desc">{slide.text}</p>
+        <div className="projects-project__desc">{slide.text}</div>
         <div className="actions">
           <button className="dark-btn">Github</button>
           <button
