@@ -2,7 +2,7 @@ import "../../scss/App.scss";
 import "@lottiefiles/lottie-player";
 
 const About = () => {
-  const me = (width, margin) => {
+  const me = (width, margin = "0") => {
     return (
       <lottie-player
         background="transparent"
@@ -42,7 +42,7 @@ const About = () => {
           </div> */}
           </div>
         </div>
-        {window.innerWidth > 768 && me("350px", "3.5% auto")}
+        {window.innerWidth > 768 && me("350px")}
       </div>
     </>
   );

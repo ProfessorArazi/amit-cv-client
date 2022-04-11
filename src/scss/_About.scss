@@ -17,12 +17,11 @@
   }
   &-me {
     font-size: 18px;
-    margin: 20px 50px;
+    width: 80%;
+    margin: 20px auto;
     display: flex;
     justify-content: center;
-    img {
-      width: 400px;
-    }
+
     p {
       margin-left: 10%;
       line-height: 1.5;
@@ -52,6 +51,7 @@
     }
 
     &-me {
+      width: 100%;
       display: block;
       gap: 0;
       margin: 0;
