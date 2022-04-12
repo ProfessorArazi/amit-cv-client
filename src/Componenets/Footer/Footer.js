@@ -31,7 +31,7 @@ const Footer = () => {
             <a href="https://github.com/ProfessorArazi">
               <i className="icon ion-social-github"></i>
             </a>
-            <a href="https://www.linkedin.com/in/amit-arazi-bb706b217/">
+            <a href="https://linkedin.com/in/amit-arazi">
               <i className="icon ion-social-linkedin"></i>
             </a>
           </div>
