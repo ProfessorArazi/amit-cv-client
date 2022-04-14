@@ -28,7 +28,7 @@ const Footer = () => {
             <a href="https://api.whatsapp.com/send?phone=+972543438551">
               <i className="icon ion-social-whatsapp"></i>
             </a>
-            <a href="https://github.com/ProfessorArazi">
+            <a href="https://github.com/ProfessorArazi?tab=repositories">
               <i className="icon ion-social-github"></i>
             </a>
             <a href="https://linkedin.com/in/amit-arazi">

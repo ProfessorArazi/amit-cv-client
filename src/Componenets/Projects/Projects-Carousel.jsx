@@ -32,7 +32,13 @@ export const ProjectsCarousel = (props) => {
       <div>
         <h2>{slide.title}</h2>
         <div className="projects-project__desc">{slide.text}</div>
-        <div className="actions">
+        <div
+          onClick={() =>
+            (window.location.href =
+              "https://github.com/ProfessorArazi?tab=repositories")
+          }
+          className="actions"
+        >
           <button className="dark-btn">Github</button>
           <button
             onClick={() => (window.location.href = slide.link)}
