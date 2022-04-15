@@ -59,7 +59,7 @@ const Projects = () => {
         <p>
           This is a sudoku game which I created his client side with a partner.
           <br /> I added a server side so users can sign up and try to get into
-          the top ten results
+          the top ten results.
         </p>
       ),
       link: "https://amit-sudoku.vercel.app",
@@ -72,7 +72,7 @@ const Projects = () => {
         <p>
           This is a tool for recruiters which reads the resumes of candidates
           and filters them according to the selected keywords. After filtering,
-          the filtered resumes will be sent to the recruiter by email
+          the filtered resumes will be sent to the recruiter by email.
         </p>
       ),
       link: "https://filter-cv.vercel.app",
