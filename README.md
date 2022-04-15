@@ -1,3 +1,3 @@
-# amit-cv
+# Amit-CV
 
 This is my portfolio
