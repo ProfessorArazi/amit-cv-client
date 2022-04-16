@@ -18,6 +18,7 @@ export const ProjectsCarousel = (props) => {
           showIndicators={false}
           showThumbs={false}
           transitionTime={0}
+          infiniteLoop
         >
           {props.projects.map((project, i) => (
             <img
