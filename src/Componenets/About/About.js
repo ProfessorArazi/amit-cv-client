@@ -24,14 +24,14 @@ const About = () => {
             {window.innerWidth <= 768 && me("250px", "5% auto")}
             <h2 className="about-title__sec">Hi there! I am Amit Arazi</h2>
             <p>
-              I am a Fullstack developer. <br /> I am passionate about my work
-              with a keen eye for aesthetics. <br /> I am a quick learner,
-              detail oriented and am excellent at strategic planning. <br />
+              I am a fullstack developer. <br /> I am passionate about my work
+              with keen eye for aesthetics. <br /> I am a quick learner, detail
+              oriented and excellent at strategic planning. <br />
               <br /> I am also flexible and easy-going with superb interpersonal
-              skills, which makes me a great team player & as developer. <br />{" "}
-              Loves to learn new things on my own,and i always Improves my
+              skills, which makes me a great team player and developer. <br />{" "}
+              Loves to learn new things on my own,and I always Improve my
               skills. <br />
-              my goal is always driven towards providing amazing experience with
+              My goal is always driven towards providing amazing experience with
               the best level of quality and service to them. <br /> I live and
               breathe the web app development world that i love so much.
             </p>
