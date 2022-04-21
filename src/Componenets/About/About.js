@@ -22,7 +22,10 @@ const About = () => {
         <div>
           <div className="my-card">
             {window.innerWidth <= 768 && me("250px", "5% auto")}
-            <h2 className="about-title__sec">Hi there! I am Amit Arazi</h2>
+            <h2 className="about-title__sec">
+              Hi there!
+              <br /> I am Amit Arazi
+            </h2>
             <p>
               I am a fullstack developer. <br /> I am passionate about my work
               with keen eye for aesthetics. <br /> I am a quick learner, detail
