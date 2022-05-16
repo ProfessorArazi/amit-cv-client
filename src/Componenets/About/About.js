@@ -33,10 +33,7 @@ const About = () => {
               <br /> I am also flexible and easy-going with superb interpersonal
               skills, which makes me a great team player and developer. <br />{" "}
               Loves to learn new things on my own,and I always Improve my
-              skills. <br />
-              My goal is always driven towards providing amazing experience with
-              the best level of quality and service to them. <br /> I live and
-              breathe the web app development world that i love so much.
+              skills. <br />I live and breathe the web app development world.
             </p>
             {/* <div className="actions">
             <Button>lololol</Button>

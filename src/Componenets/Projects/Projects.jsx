@@ -1,6 +1,9 @@
 import "../../scss/App.scss";
-import amit from "../../img/ameat-screen.png";
+import ameat from "../../img/ameat-screen.png";
 import substitutes from "../../img/substitutes.png";
+import superCompare from "../../img/super-compare.png";
+import sudoku from "../../img/sudoku.png";
+import filterCv from "../../img/filter-cv.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { ProjectsCarousel } from "./Projects-Carousel";
 
@@ -29,7 +32,7 @@ const Projects = () => {
       link: "https://substitutes.vercel.app",
     },
     {
-      img: amit,
+      img: superCompare,
       title: "Super Compare",
       text: (
         <p>
@@ -46,14 +49,24 @@ const Projects = () => {
       link: "https://super-compare.vercel.app",
     },
     {
-      img: substitutes,
+      img: ameat,
       title: "Ameat",
-      text: `Some quick example text to build on the card title and make up
-    the bulk of the card's content.`,
+      text: (
+        <p>
+          This is a demo resturant.
+          <br />
+          In this restaurant you can order from a variety of meats. <br />
+          Customers can join the members club and enjoy a free burger on their
+          birthday. <br /> Club members also earn points on every order and can
+          use them for discounts. <br />
+          The order confirmation will be sent via email. <br /> There is an
+          option to contact the restaurant through the website if necessary.
+        </p>
+      ),
       link: "https://ameat-client.vercel.app",
     },
     {
-      img: amit,
+      img: sudoku,
       title: "Sudoku",
       text: (
         <p>
@@ -66,7 +79,7 @@ const Projects = () => {
     },
 
     {
-      img: substitutes,
+      img: filterCv,
       title: "Filter-CV",
       text: (
         <p>
