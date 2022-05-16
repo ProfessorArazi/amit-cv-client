@@ -11,18 +11,6 @@ import Contact from "./Componenets/Contact/Contact";
 import Footer from "./Componenets/Footer/Footer";
 import Projects from "./Componenets/Projects/Projects";
 
-/*
-todo:
-1.add env with server - finished
-2.add animation in about page - finished
-3.add text about me
-4.remove familiar with - finished
-5.add projects and style projects componenet
-6.deploy - finished
-7.footer
-
-*/
-
 function App() {
   useEffect(() => {
     document.title = "Amit Arazi";
