@@ -12,6 +12,7 @@ export const ProjectsCarousel = (props) => {
       <div className="carousel-background">
         <img className="carousel-background__img" src={amit} alt="" />
         <Carousel
+          onClickItem={() => (window.location.href = slide.link)}
           className="carousel"
           onChange={(i) => setSlide(props.projects[i])}
           showStatus={false}
@@ -21,12 +22,14 @@ export const ProjectsCarousel = (props) => {
           infiniteLoop
         >
           {props.projects.map((project, i) => (
-            <img
-              className="carousel-slide"
-              key={project.title + i}
-              src={project.img}
-              alt={project.title}
-            />
+            <button className="carousel-slide__wrapper">
+              <img
+                className="carousel-slide"
+                key={project.title + i}
+                src={project.img}
+                alt={project.title}
+              />
+            </button>
           ))}
         </Carousel>
       </div>
