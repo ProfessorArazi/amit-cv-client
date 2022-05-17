@@ -44,13 +44,10 @@
   gap: 8rem !important;
 }
 
-@media (max-width: 992px) {
-  .front {
-    gap: 2rem !important;
-  }
-
+@media (max-width: 768px) {
+  .front,
   .back {
-    gap: 2rem !important;
+    gap: 2.5rem !important;
   }
 
   .skills {
@@ -59,9 +56,6 @@
     }
     &-title__back::after {
       width: 100%;
-    }
-    &-title__familiar::after {
-      width: 40%;
     }
   }
 }
