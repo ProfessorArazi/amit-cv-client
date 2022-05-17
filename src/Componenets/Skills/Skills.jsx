@@ -5,15 +5,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 const Skills = () => {
-  const Frontend = [
-    "HTML",
-    "CSS",
-    "SASS",
-    "JavaScript",
-    "React",
-    "Redux",
-    "Jest",
-  ];
+  const Frontend = ["HTML", "CSS", "SASS", "JavaScript", "React", "Jest"];
   const Backend = ["NodeJS", "Express", "MongoDB"];
 
   useEffect(() => {
