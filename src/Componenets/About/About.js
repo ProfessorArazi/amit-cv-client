@@ -27,22 +27,21 @@ const About = () => {
               <br /> I am Amit Arazi
             </h2>
             <p>
-              I am a fullstack developer. <br /> I am passionate about my work
-              with keen eye for aesthetics. <br /> I am a quick learner, detail
-              oriented and excellent at strategic planning. <br />
-              <br /> I am also flexible and easy-going with superb interpersonal
-              skills, which makes me a great team player and developer. <br />{" "}
-              Loves to learn new things on my own,and I always Improve my
-              skills. <br />I live and breathe the web app development world.
+              Since I was a child I knew that when I will grow up I would like
+              to work in the discipline of computer science. <br />
+              This is an area that has always attracted me because my dad is a
+              programmer and I have always looked at him as a role model. <br />
+              In the last two years I completed successfully many online courses
+              and developed competence in several full stack sub areas and
+              recently I completed full stack program in SVCollage with the
+              final score of 91. <br /> I consider myself as self learner, I am
+              highly motivated and eager to start my career path as a software
+              programmer with ambition to further develop my knowledge over time
+              and become an expert.
             </p>
-            {/* <div className="actions">
-            <Button>lololol</Button>
-            <Button>lololol</Button>
-            <Button>lololol</Button>
-          </div> */}
           </div>
         </div>
-        {window.innerWidth > 768 && me("350px")}
+        {window.innerWidth > 768 && me("600px")}
       </div>
     </>
   );
