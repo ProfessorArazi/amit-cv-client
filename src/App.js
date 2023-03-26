@@ -31,20 +31,13 @@ function App() {
     <>
       <Navbar expanded={expanded} expand="lg" fixed="top" variant="dark">
         <Container>
-          <Navbar.Brand
-            className="nav-brand"
-            href="#home"
-            onClick={closeToggleHandler}
-          >
-            Amit Arazi
-          </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"
             onClick={toggleHandler}
           />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home" onClick={closeToggleHandler}>
+              <Nav.Link active href="#home" onClick={closeToggleHandler}>
                 Home
               </Nav.Link>
               <Nav.Link href="#about" onClick={closeToggleHandler}>

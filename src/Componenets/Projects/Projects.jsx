@@ -3,7 +3,6 @@ import ameat from "../../img/ameat-screen.png";
 import substitutes from "../../img/substitutes.png";
 import superCompare from "../../img/super-compare.png";
 import sudoku from "../../img/sudoku.png";
-import filterCv from "../../img/filter-cv.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { ProjectsCarousel } from "./Projects-Carousel";
 
@@ -76,19 +75,6 @@ const Projects = () => {
         </p>
       ),
       link: "https://amit-sudoku.vercel.app",
-    },
-
-    {
-      img: filterCv,
-      title: "Filter-CV",
-      text: (
-        <p>
-          This is a tool for recruiters which reads the resumes of candidates
-          and filters them according to the selected keywords. After filtering,
-          the filtered resumes will be sent to the recruiter by email.
-        </p>
-      ),
-      link: "https://filter-cv.vercel.app",
     },
   ];
 
