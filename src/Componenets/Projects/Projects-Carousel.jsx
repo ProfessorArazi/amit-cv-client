@@ -22,7 +22,7 @@ export const ProjectsCarousel = (props) => {
           infiniteLoop
         >
           {props.projects.map((project, i) => (
-            <button className="carousel-slide__wrapper">
+            <button key={project.link} className="carousel-slide__wrapper">
               <img
                 className="carousel-slide"
                 key={project.title + i}

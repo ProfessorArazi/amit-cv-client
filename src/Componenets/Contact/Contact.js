@@ -3,10 +3,12 @@ import { useRef, useState } from "react";
 import axios from "axios";
 import { Form } from "react-bootstrap";
 import validator from "validator";
+import Loading from "../UI/Loading/Loading";
 
 const Contact = () => {
   const [Message, setMessage] = useState(null);
   const [errors, setErrors] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   const nameRef = useRef();
   const emailRef = useRef();
@@ -15,6 +17,7 @@ const Contact = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     setErrors(null);
+    setMessage(null);
 
     const formErrors = {};
 
@@ -39,16 +42,18 @@ const Contact = () => {
     if (Object.keys(formErrors).length > 0) {
       return setErrors(formErrors);
     }
-
+    setLoading(true);
     axios
       .post(`${process.env.REACT_APP_SERVER}/contact`, data)
       .then((res) => {
         setErrors(null);
         setMessage(res.data.message);
+        setLoading(false);
       })
       .catch((err) => {
         setErrors(err.response.data.errors);
         setMessage(err.response.data.message);
+        setLoading(false);
       });
   };
 
@@ -108,6 +113,7 @@ const Contact = () => {
           </Form.Text>
         )}
       </Form>
+      { loading && <Loading />}
     </>
   );
 };
