@@ -1,4 +1,3 @@
-//
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { useState, useEffect, useRef } from "react";
 import Aos from "aos";
