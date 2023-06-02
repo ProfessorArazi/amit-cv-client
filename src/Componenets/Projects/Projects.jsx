@@ -1,13 +1,57 @@
 import "../../scss/App.scss";
-import ameat from "../../img/ameat-screen.png";
 import substitutes from "../../img/substitutes.png";
 import superCompare from "../../img/super-compare.png";
 import sudoku from "../../img/sudoku.png";
+import interview from "../../img/interview.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { ProjectsCarousel } from "./Projects-Carousel";
 
 const Projects = () => {
   const projects = [
+    {
+      img: interview,
+      title: "Interview",
+      text: (
+        <p>
+          My interview simulation website offers a unique experience for
+          refining your interview skills.
+          <br /> Utilizing a camera integration, you can simulate Zoom
+          interviews and perfect your on-camera presence.
+          <br /> Engage with a vibrant community of users, where you can access
+          <br />
+          community-generated questions and customize them to suit your needs.
+          <br />
+          Additionally, you have the option to contribute your own questions,
+          fostering a collaborative learning environment.
+          <br /> Prepare with confidence, enhance your skills, and excel in your
+          next interview.
+        </p>
+      ),
+      link: "https://interview-amit.vercel.app",
+    },
+    {
+      img: superCompare,
+      title: "Super Compare",
+      text: (
+        <p>
+          Discover the best deals with our comprehensive comparison site that
+          analyzes three leading markets.
+          <br /> Our platform utilizes a sophisticated scraper to fetch
+          real-time prices from each market, ensuring that <br /> you always
+          have up-to-date information at your fingertips.
+          <br /> With our user-friendly interface, you can easily select
+          your desired  <br /> product and find the cheapest market tailored to your
+          preferences.
+          <br /> Our comparison takes into account the discounts  offered
+          by each <br /> market, enabling you to make informed purchasing decisions.
+          <br /> Experience the convenience of finding the best deals
+          effortlessly and save money on
+          <br />
+          your purchases through our cutting-edge comparison site.
+        </p>
+      ),
+      link: "https://super-compare.vercel.app",
+    },
     {
       img: substitutes,
       title: "Substitutes",
@@ -29,40 +73,6 @@ const Projects = () => {
         </p>
       ),
       link: "https://substitutes.vercel.app",
-    },
-    {
-      img: superCompare,
-      title: "Super Compare",
-      text: (
-        <p>
-          This is a comparison site that compares three well-known markets.
-          <br />
-          I created a scraper to get all the latest prices from each market so
-          the prices will always be up to date. <br />
-          Thanks to that I give you the ability to choose the cheapest market
-          according to what you are interested in purchasing. <br />
-          The comparison takes into account the discounts that the markets
-          offer.
-        </p>
-      ),
-      link: "https://super-compare.vercel.app",
-    },
-    {
-      img: ameat,
-      title: "Ameat",
-      text: (
-        <p>
-          This is a demo resturant.
-          <br />
-          In this restaurant you can order from a variety of meats. <br />
-          Customers can join the members club and enjoy a free burger on their
-          birthday. <br /> Club members also earn points on every order and can
-          use them for discounts. <br />
-          The order confirmation will be sent via email. <br /> There is an
-          option to contact the restaurant through the website if necessary.
-        </p>
-      ),
-      link: "https://ameat-client.vercel.app",
     },
     {
       img: sudoku,
