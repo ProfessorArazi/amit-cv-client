@@ -2,7 +2,7 @@ import "../../scss/App.scss";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useState } from "react";
-import amit from "../../img/leamit.png";
+import laptop from "../../img/leamit.png";
 
 export const ProjectsCarousel = (props) => {
   const [slide, setSlide] = useState(props.projects[0]);
@@ -10,7 +10,7 @@ export const ProjectsCarousel = (props) => {
   return (
     <>
       <div className="carousel-background">
-        <img className="carousel-background__img" src={amit} alt="" />
+        <img className="carousel-background__img" src={laptop} alt="" />
         <Carousel
           onClickItem={() => (window.location.href = slide.link)}
           className="carousel"
